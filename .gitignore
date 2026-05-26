@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local logs and runtime files (the plugin generates these in CONSUMER repos —
+# not here. Listed defensively in case someone runs the plugin from inside this repo.)
+_Agent Logs/
+nul
+tmpclaude-*
+
+# Local plan/research scratch (consumers may keep these; we don't ship them)
+_Plan/
+_Research/

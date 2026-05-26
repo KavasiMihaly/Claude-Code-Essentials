@@ -1,0 +1,122 @@
+{
+  "name": "claude-code-essentials",
+  "version": "0.1.0",
+  "description": "Curated hooks and tooling for Claude Code: per-session agent action logs, an install-command guard, and a token-aware statusline.",
+  "author": {
+    "name": "Mihaly Kavasi",
+    "email": "kavasi.mihaly@onedaybi.com",
+    "url": "https://github.com/KavasiMihaly"
+  },
+  "homepage": "https://github.com/KavasiMihaly/Claude-Code-Essentials",
+  "repository": "https://github.com/KavasiMihaly/Claude-Code-Essentials",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "hooks",
+    "statusline",
+    "agent-logger",
+    "observability",
+    "guardrails",
+    "developer-tools"
+  ],
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python ${CLAUDE_PLUGIN_ROOT}/hooks/agent-logger.py"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python ${CLAUDE_PLUGIN_ROOT}/hooks/agent-logger.py"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python ${CLAUDE_PLUGIN_ROOT}/hooks/agent-logger.py"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python ${CLAUDE_PLUGIN_ROOT}/hooks/block-installs.py",
+            "statusMessage": "Checking for unapproved install commands..."
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python ${CLAUDE_PLUGIN_ROOT}/hooks/agent-logger.py"
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python ${CLAUDE_PLUGIN_ROOT}/hooks/agent-logger.py"
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python ${CLAUDE_PLUGIN_ROOT}/hooks/agent-logger.py"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python ${CLAUDE_PLUGIN_ROOT}/hooks/agent-logger.py"
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python ${CLAUDE_PLUGIN_ROOT}/hooks/agent-logger.py"
+          }
+        ]
+      }
+    ]
+  }
+}
