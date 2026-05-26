@@ -2,6 +2,8 @@
 
 Curated hooks and tooling for everyday Claude Code use. **See what your agents are doing. Block what you didn't approve. Track tokens at a glance.**
 
+![Statusline preview — model, working folder, context-window usage, and 5h/7d rate limits](assets/statusline.png)
+
 By [Mihaly Kavasi](https://github.com/KavasiMihaly) — part of the [OneDayBI Marketplace](https://github.com/KavasiMihaly/AI-plugins).
 
 ---
@@ -78,6 +80,8 @@ Claude asks you, you say yes, Claude re-runs as `pip install dbt-core # APPROVED
 ```
 Claude Opus 4.7 | my-project | ctx: 45.2k/200.0k (23% used) | 5h: 12% 7d: 4%
 ```
+
+See [`assets/statusline.png`](assets/statusline.png) for the rendered version in a real Claude Code session.
 
 ---
 

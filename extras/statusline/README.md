@@ -2,6 +2,8 @@
 
 A token-aware status bar for Claude Code. Shows the current model, working folder, context-window consumption, and rate-limit usage in one line.
 
+![Statusline preview](../../assets/statusline.png)
+
 ```
 Claude Opus 4.7 | my-project | ctx: 45.2k/200.0k (23% used) | 5h: 12% 7d: 4%
 ```
