@@ -117,6 +117,6 @@ MIT — see [LICENSE](LICENSE).
 
 ## Author
 
-**Mihaly Kavasi** — [@KavasiMihaly](https://github.com/KavasiMihaly) | [OneDayBI](https://www.onedaybi.com) | [Self-Service BI Blog](https://selfservicebi.com)
+**Mihaly Kavasi** — [@KavasiMihaly](https://github.com/KavasiMihaly) | [OneDayBI](https://www.onedaybi.com) | [Self-Service BI Blog](https://selfservicebi.co.uk)
 
 Found this useful? Star the repo and browse the rest of the [OneDayBI Marketplace](https://github.com/KavasiMihaly/AI-plugins).
