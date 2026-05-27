@@ -119,4 +119,4 @@ MIT — see [LICENSE](LICENSE).
 
 **Mihaly Kavasi** — [@KavasiMihaly](https://github.com/KavasiMihaly) | [OneDayBI](https://www.onedaybi.com) | [Self-Service BI Blog](https://selfservicebi.co.uk)
 
-Found this useful? Star the repo and browse the rest of the [OneDayBI Marketplace](https://github.com/KavasiMihaly/AI-plugins).
+Found this useful? Star the repo and browse the rest of the [OneDayBI Marketplace](https://github.com/KavasiMihaly/AI-plugins). For patterns and best practices behind these hooks, see the [Claude Code Handbook](https://github.com/KavasiMihaly/Claude-Code-Handbook).
